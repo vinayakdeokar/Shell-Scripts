@@ -8,15 +8,6 @@
 #######################################
 
 #!/bin/bash
-#######################################
-# Script Name :  service.sh #
-# Version : 2.0 #
-# Date :  15/10/2025 #
-# Credit: Vinayak Deokar #
-# Purpose : Write a shell script that checks whether a specified service is running and restarts it if it's not running. #
-#######################################
-
-#!/bin/bash
 read -p "enter serviec name : " service_name
 
 status=$(systemctl is-active $service_name)
