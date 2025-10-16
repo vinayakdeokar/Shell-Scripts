@@ -1,0 +1,14 @@
+#!/bin/bash
+#######################################
+# Script Name   : 17_failed_ssh_login
+# Version       : 2.0 #
+# Date          : 15/10/2025 #
+# Credit        : Vinayak Deokar #
+# Purpose       : Write a script that checks for and reports any failed SSH login attempts on a Linux server.#
+#######################################
+
+
+#!/bin/bash
+
+echo "Failed SSH login attempts:" | tee ssh_login_failed.txt
+grep "Failed password" /var/log/secure | tee -a ssh_login_failed.txt
