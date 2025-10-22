@@ -9,11 +9,8 @@
 
 
 #!/bin/bash
-
-# Ask user for location
 read -p "Enter location: " location
 
-# Fetch weather using wttr.in
 echo "Fetching weather for $location..."
 curl -s "https://wttr.in/$location?format=3"
 
